@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="all">
+      <div class="top-section-header">
+        <div class="top-section_left">
+          <h1 class="darkh1">User List</h1>
+        </div>
+        <div class="top-section_right">
+          <button class="addBtn">+ NEW</button>
+          <div class="modeBtn">
+            <button class="lightModeBtn">
+              <img src="./icons/light.svg" alt="" />LIGHT
+            </button>
+            <button class="darkModeBtn">
+              DARK<img src="./icons/dark.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <dialog class="addDialog">
+        <div class="dialog-width">
+          <div class="top-section-dialog">
+            <div class="top-section-dialog_left">
+              <h1>Add new</h1>
+            </div>
+            <div class="top-section-dialog_right">
+              <p class="cancelBtn1">&times;</p>
+            </div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <div class="bottom-section-dialog">
+          <form class="formAdd">
+            <div class="dialog-width">
+              <input
+                required
+                class="input-dialog"
+                name="addImg"
+                placeholder=".png / .jpg / .jpeg"
+                type="img"
+              />
+              <input
+                required
+                class="input-dialog"
+                name="addName"
+                placeholder="Name"
+                type="name"
+              />
+              <input
+                required
+                class="input-dialog"
+                name="addSurname"
+                placeholder="Surname"
+                type="surname"
+              />
+              <input
+                required
+                class="input-dialog"
+                name="addEmail"
+                placeholder="E-mail"
+                type="email"
+              />
+              <select required class="input-dialog" name="selectStatus">
+                <option value="">All Status</option>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+              </select>
+              <select required class="input-dialog" name="selectCity">
+                <option value="">All cities</option>
+                <option value="Dushanbe">Dushanbe</option>
+                <option value="Bokhtar">Bokhtar</option>
+                <option value="Khujand">Khujand</option>
+              </select>
+              <input
+                required
+                class="input-dialog"
+                name="addPhone"
+                placeholder="Phone"
+                type="phone"
+              />
+            </div>
+            <div class="hr"></div>
+            <div class="dialog-width">
+              <div class="deatilsBtn">
+                <button type="submit">SAVE</button>
+                <div class="cancelBtn">CANCEL</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </dialog>
+
+      <dialog class="editDialog">
+        <div class="dialog-width">
+          <div class="top-section-dialog">
+            <div class="top-section-dialog_left">
+              <h1>Edit User</h1>
+            </div>
+            <div class="top-section-dialog_right">
+              <p class="cancelBtn1 cancelBtnEdit">&times;</p>
+            </div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <div class="bottom-section-dialog">
+          <form class="formEdit">
+            <div class="dialog-width">
+              <input required class="input-dialog" name="editImg" type="img" />
+              <input
+                required
+                class="input-dialog"
+                name="editName"
+                type="name"
+              />
+              <input
+                required
+                class="input-dialog"
+                name="editSurname"
+                type="surname"
+              />
+              <input
+                required
+                class="input-dialog"
+                name="editEmail"
+                type="email"
+              />
+              <select required class="input-dialog" name="editStatus">
+                <option value="">All Status</option>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+              </select>
+              <select required class="input-dialog" name="editSelectCity">
+                <option value="Dushanbe">Dushanbe</option>
+                <option value="Bokhtar">Bokhtar</option>
+                <option value="Khujand">Khujand</option>
+              </select>
+              <input class="input-dialog" name="editPhone" type="phone" />
+            </div>
+            <div class="hr"></div>
+            <div class="dialog-width">
+              <div class="deatilsBtn">
+                <button type="submit">SAVE</button>
+                <div class="cancelBtn cancelBtnEdits">CANCEL</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </dialog>
+
+      <div class="bottom-section-header">
+        <div class="bottom-section_left">
+          <select class="selectActive selectDark">
+            <option value="">All status</option>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+          </select>
+          <select class="selectCity selectDark1">
+            <option value="">All cities</option>
+            <option value="Dushanbe">Dushanbe</option>
+            <option value="Bokhtar">Bokhtar</option>
+            <option value="Khujand">Khujand</option>
+          </select>
+        </div>
+        <div class="bottom-section_right">
+          <input
+            class="search inputDark"
+            placeholder="Search Name . . ."
+            type="text"
+          />
+        </div>
+      </div>
+
+      <table>
+        <thead class="thead">
+          <th>
+            <p><img class="imgLeftTh" src="./icons/user.svg" alt="" />Name</p>
+          </th>
+          <th>
+            <p><img class="imgLeftTh" src="./icons/lock.svg" alt="" />Город</p>
+          </th>
+          <th>
+            <p>
+              <img
+                class="imgLeftTh"
+                src="./icons/statustim.svg"
+                alt=""
+              />Status<img class="imgRightTh" src="./icons/up.svg" alt="" />
+            </p>
+          </th>
+          <th>
+            <p>
+              <img class="imgLeftTh" src="./icons/phone.svg" alt="" /> Phone
+            </p>
+          </th>
+          <th></th>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./Js/main.js"></script>
+  </body>
+</html>
